@@ -1,0 +1,1 @@
+// Knowing what edges matter, now compute their normals/zero crossing point

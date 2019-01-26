@@ -1,0 +1,59 @@
+================================================================================
+    SprueEngine Notes
+================================================================================
+
+Libraries:
+    OpenVDB
+        Current:
+            Mesh -> Level Set
+        Considering:
+            Using for all meshing
+    MathGeoLib
+        Used for most math primitives
+    TinyEditableMesh
+        Current:
+            1-ring neighborhood access of mesh surface
+            Navigating on surface/chart of mesh
+            Handling projection -> surface space
+        Considering:
+            Modifications for sculpting
+    OpenMesh
+        Considering:
+            1-ring
+            Modifiers
+    Fast Quadric Mesh Simplification (modified) https://github.com/sp4cerat/Fast-Quadric-Mesh-Simplification
+        for Mesh simplification and VDMP generation
+    UVAtlas https://github.com/Microsoft/UVAtlas
+        Current:
+            UV map coordinate charting
+            Modified to work with internal types
+
+Funding Targets
+    Animation Retargeting
+    Master Parts Database
+    Sculpting / Projective Painting
+    Physics / Collision setup
+
+Work-flow
+
+    Design Shape -> 
+        Generate Topology -> 
+        Scult [optional] ->
+        Generate Low-Poly [optional] -> 
+        Generate UVs ->
+        Generate Texture ->
+        Paint [optional] ->
+        Generate bone weights ->
+        Setup Animation sequences ->
+        Export 
+
+    Permutation Shape ->
+        Randomize Shape ->
+        Randomize Texture ->
+        Export
+
+    Quick Shape ->
+        Sketch ->
+        Extrude | Revolve | Taper Edge ->
+        Generate UVs ->
+        Export
